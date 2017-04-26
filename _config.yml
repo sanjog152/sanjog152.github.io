@@ -1,0 +1,39 @@
+# Site settings
+title: Sanjog Kumar Dash | Python, PHP, DevOps
+description: "Sanjog Kumar Dash Personal Site"
+url: "http://www.sanjogdash.in"
+author:
+  name: "Sanjog Kumar Dash"
+  email: "sanjog152@gmail.com"
+  url: "http://www.sanjogdash.in"
+
+# Build settings
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+markdown: kramdown
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+version: "1.0.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
